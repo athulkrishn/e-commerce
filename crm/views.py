@@ -68,7 +68,7 @@ class AvgRating(View):
 
     def get(self,request):
 
-        data=Product.objects.all()
+        data=Review.objects.all()
 
         return render(request,"avgrating.html",{"data":data})
 
